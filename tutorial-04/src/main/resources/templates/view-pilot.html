@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+	<head>
+		<title>View Pilot</title>
+	</head>
+	<body>
+		<h2>Data</h2>
+		Pilot License Number :
+		<h3 th:text="${pilot.licenseNumber}"></h3>
+		Name :
+		<h3 th:text="${pilot.name}"></h3>
+		Fly Hour :
+		<h3 th:text="${pilot.flyHour}"></h3>
+		
+		<td>
+			<a th:href="@{/pilot/addFlight}">Add flight</a>
+		</td>
+	</body>
+</html>
